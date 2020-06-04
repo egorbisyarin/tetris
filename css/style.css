@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/tetris-matrix.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game {
+    font-size: 30px;
+    width: 320px;
+    margin: auto;
+    font-family: fantasy;
+}
+
+.main {
+    width: 320px;
+    height: 620px;
+    margin: 20px auto 0;
+    border: 10px solid silver;
+    font-size: 0;
+    background-color: grey;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    display: inline-block;
+}
+
+.movingCell {
+    background-color: deepskyblue;
+}
+
+.fixedCell {
+    background-color: lime;
+}
+
+#next-tetro {
+    position: absolute;
+    top: 320px;
+    left: 280px;
+    font-size: 0;
+    background-color: grey;
+}
+
+#game-over {
+    font-size: 90px;
+    color: red;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+}
+
+#start:hover {
+    background: lime;
+    color: purple;
+    border: 0;
+    cursor: pointer;
+}
+
+#pause:hover {
+    background: yellow;
+    color: purple;
+    border: 0;
+    cursor: pointer;
+}
+
+.controls {
+    font-family: fantasy;
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    right: 1px;
+    border: 5px solid white;
+    text-align: center;
+}
